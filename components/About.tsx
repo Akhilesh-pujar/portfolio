@@ -1,5 +1,8 @@
 import React from 'react'
 import {motion} from 'framer-motion';
+import banner from '../assets/banner.jpeg';
+
+
 
 type Props = {}
 

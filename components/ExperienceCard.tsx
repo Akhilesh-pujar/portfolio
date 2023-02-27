@@ -1,6 +1,9 @@
 import React from 'react'
 import{motion} from 'framer-motion';
-
+import Image from 'next/image';
+import react from  '../assets/react.png';
+import js from '../assets/js.png';
+import tail from '../assets/tail.png';
 type Props = {}
 
 function ExperienceCard({}: Props) {
@@ -24,19 +27,19 @@ function ExperienceCard({}: Props) {
     <h4 className='text-4xl font-light'>Frontend Developer</h4>
     <p className='font-bold text-2xl mt-1'>Simmi Foundation</p>
     <div className='flex space-x-2 my-2'>
-        <img
-        className='h-10 w-15 rounded-full'
-        src='https://cdn.worldvectorlogo.com/logos/react-1.svg'
+        <Image
+        className='h-10 w-10 rounded-full'
+        src={react}
         alt="techiknow"
         />
-       <img
+       <Image
         className='h-10 w-10 rounded-full'
-        src='https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text.png'
+        src={js}
         alt="techiknow"
         />
-        <img
+        <Image
         className='h-10 w-10 rounded-full'
-        src='https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png'
+        src={tail}
         alt="techiknow"
         />
         {/* tech used */}

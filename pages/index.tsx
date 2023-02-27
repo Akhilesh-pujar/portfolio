@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import type { GetStaticProps} from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import hero_banner from '../assets/hero_banner.jpeg';
 
 
 
@@ -66,8 +68,8 @@ const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
       </section>
       <Link href="#hero">
       <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='  flex items-center justify-center'>
-            <img src='https://scontent.fblr20-3.fna.fbcdn.net/v/t39.30808-6/217680254_1516387568710257_7315332803292223119_n.jpg?stp=dst-jpg_p843x403&_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=O2D04wU2WJQAX9tV6oH&_nc_ht=scontent.fblr20-3.fna&oh=00_AfCMzrPy23jhtAckER6hVIZYZUNOAW8DU3gqorEW7S60zg&oe=63FEB671' 
+          <div className='flex items-center justify-center'>
+            <Image src={hero_banner}
             alt="footer"
             className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
             />

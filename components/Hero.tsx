@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { Cursor,useTypewriter } from 'react-simple-typewriter';
+import Image from 'next/image';
+import hero_banner from '../assets/hero_banner.jpeg';
 
 
 
@@ -21,8 +23,9 @@ export default function Hero({}: Props) {
     <div className='flex flex-col h-screen items-center justify-center
     text-center'>
        <BackgroundCircle/>
-       <img
-       src="https://scontent.fblr20-2.fna.fbcdn.net/v/t39.30808-6/293319678_1770997416582603_6350480388994977954_n.jpg?stp=dst-jpg_p960x960&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IlH_sggj2QwAX8xjRUY&_nc_ht=scontent.fblr20-2.fna&oh=00_AfAZKvfg2AesYxl0cEZGXUGCxfvANVC4SF_GD8AyPDG_7Q&oe=63FF8A90"
+       <Image
+       priority
+       src={hero_banner}
        className='relative rounded-full h-32 w-32 mx-auto object-cover '
         
        alt="banner"/>
