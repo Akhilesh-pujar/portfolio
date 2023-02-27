@@ -3,6 +3,7 @@ import React from 'react';
 import { Cursor,useTypewriter } from 'react-simple-typewriter';
 
 
+
 import BackgroundCircle from './BackgroundCircle';
 type Props = {}
 
@@ -21,8 +22,9 @@ export default function Hero({}: Props) {
     text-center'>
        <BackgroundCircle/>
        <img
+       src="https://scontent.fblr20-2.fna.fbcdn.net/v/t39.30808-6/293319678_1770997416582603_6350480388994977954_n.jpg?stp=dst-jpg_p960x960&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IlH_sggj2QwAX8xjRUY&_nc_ht=scontent.fblr20-2.fna&oh=00_AfAZKvfg2AesYxl0cEZGXUGCxfvANVC4SF_GD8AyPDG_7Q&oe=63FF8A90"
        className='relative rounded-full h-32 w-32 mx-auto object-cover '
-        src='https://lh3.googleusercontent.com/a/AEdFTp5KOMUdG6hQOzbSciq7sIUVDaKtxVIsaMAWMAsqmZM=s360-p-rw-no'
+        
        alt="banner"/>
         
        <div className='z-10'>
@@ -36,13 +38,13 @@ export default function Hero({}: Props) {
             <Link href="#about">
             <button className='heroButton'>About</button>
             </Link>
-            <Link href="experience">
+            <Link href="#experience">
             <button className='heroButton'>Experience</button>
             </Link>
-            <Link href="skills">
+            <Link href="#skills">
             <button className='heroButton'>Skills</button>
             </Link>
-            <Link href="projects">
+            <Link href="#projects">
             <button className='heroButton'>Projects</button>
             </Link>
       
