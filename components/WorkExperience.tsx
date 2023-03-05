@@ -22,8 +22,8 @@ function WorkExperience({}: Props) {
          scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]
         '>
           <ExperienceCard/>
-          <ExperienceCard1/>
-          <ExperienceCard/>
+          
+      
 
           
 

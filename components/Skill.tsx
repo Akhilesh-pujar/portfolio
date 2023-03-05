@@ -23,9 +23,9 @@ src='https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png'
 <div className='absolute opacity-0 group-hover:opacity-80 transition-300
 ease-in-out group-hover:bg-gray-300 h-24 w-24 md:h-25 md:w-25 xl:w-22 xl:h-22
 rounded-full '>
-  <div className='flex items-center justify-center h-full'>
+  {/* <div className='flex items-center justify-center h-full'>
     <p className='text-2xl font-bold text-black opacity=100'>100%</p>
-  </div>
+  </div> */}
 </div>
 
  

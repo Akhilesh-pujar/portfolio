@@ -23,9 +23,7 @@ src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6bbj0wSjIAxFEEL7_S9
 <div className='absolute opacity-0 group-hover:opacity-80 transition-300
 ease-in-out group-hover:bg-gray-300 h-24 w-24 md:h-25 md:w-25 xl:w-22 xl:h-22
 rounded-full '>
-  <div className='flex items-center justify-center h-full'>
-    <p className='text-2xl font-bold text-black opacity=100'>60%</p>
-  </div>
+
 </div>
 
  

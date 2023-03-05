@@ -21,12 +21,12 @@ export default function Hero({}: Props) {
     });
   return (
     <div className='flex flex-col h-screen items-center justify-center
-    text-center'>
+    text-center  '>
        <BackgroundCircle/>
        <Image
        priority
        src={hero_banner}
-       className='relative rounded-full h-32 w-32 mx-auto object-cover '
+       className='relative rounded-full h-36 w-36 mx-auto object-cover '
         
        alt="banner"/>
         

@@ -38,7 +38,7 @@ type Props={
 
 const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen ">
+    <div className='bg-[rgb(36,36,36)] text-white max-h-full  sm:w-[100%]'>
       <Head>
         <title>Akhil's Portfolio</title>
       </Head>
@@ -46,12 +46,12 @@ const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
       <Header social={socials}/>
    
       {/*Banner*/}
-      <section id="hero" className='snap-center'>
+      <section id="hero" className='snap-center  '>
         <Hero/>
       </section>
  
       {/* about */}
-      <section id="about" className=' snap-center'>
+      <section id="about" className='snap-center'>
         <About/>
       </section>
       <section id="experience" className='snap-bottom'>
@@ -71,11 +71,10 @@ const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
           <div className='flex items-center justify-center'>
             <Image src={hero_banner}
             alt="footer"
-            className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
+            className=' object-cover h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
             />
           </div>
       </footer>
-      
       </Link>
 ?
      
