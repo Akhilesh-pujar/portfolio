@@ -25,13 +25,13 @@ function BackgroundCircle({}: Props) {
         <div className='rounded-full 
         absolute border border-[#333333] h-[400px] w-[400px]
          mt-52' />
-        <div className='rounded-full border border-[#F7AB0A]
+        {/* <div className='rounded-full border border-[#F7AB0A]
          opacity-20 absolute
         h-[500px] w-[500px] mt-52 animate-pulse' />
 
         <div className='rounded-full  border border-[#333333]  h-[600px]
          w-[600px] absolute
-         mt-52'/> 
+         mt-52'/>  */}
     </motion.div>
   );
 }
