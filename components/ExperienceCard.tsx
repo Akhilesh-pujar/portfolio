@@ -6,21 +6,30 @@ import js from '../assets/js.png';
 import tail from '../assets/tail.png';
 type Props = {}
 
-function ExperienceCard({}: Props) {
+export default function ExperienceCard({}: Props) {
   return (
-  <article className='flex flex-col rounded-lg items-center space-y-2
-  flex-shrink-0 w-[600px] md:w-[500px] xl:w-[550px]  snap-center bg-[#292929] p-10
-  hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+  <article className='flex flex-col 
+  rounded-lg items-center space-y-2
+   mt-[190px]
+  flex-shrink-0 
+  w-[500px] 
+  md:w-[500px] xl:w-[600px]  
+  snap-center bg-[#292929] p-10
+  hover:opacity-100 
+  opacity-40 cursor-pointer 
+  transition-opacity duration-200 '>
   <motion.img 
   initial={{
     opacity:0,
     y:-100
   }}
-  transition={{duration:1.7}}
+  transition={{duration:1.2}}
   whileInView={{opacity:1 , y:0}}
   viewport={{once:true}}
   src='https://simmifoundation.org/home/images/logo.png'
-  className='w-32 h-32 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px]'
+  className='w-32 h-32 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px]
+   object-cover object-center
+  '
   />
 
   <div className='px-0 md:px-10'>
@@ -57,4 +66,3 @@ function ExperienceCard({}: Props) {
   );
 }
 
-export default ExperienceCard

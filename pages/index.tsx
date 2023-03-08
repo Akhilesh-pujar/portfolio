@@ -38,7 +38,7 @@ type Props={
 
 const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white max-h-full  sm:w-[100%]'>
+    <div className='bg-[rgb(36,36,36)] text-white max-h-full  '>
       <Head>
         <title>Akhil's Portfolio</title>
       </Head>
@@ -51,19 +51,19 @@ const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
       </section>
  
       {/* about */}
-      <section id="about" className='snap-center'>
+       <section id="about" className='snap-center'>
         <About/>
       </section>
-      <section id="experience" className='snap-bottom'>
+       <section id="experience" className='snap-bottom'>
         <WorkExperience/>
       </section>
-      <section id="skills" className='snap-start bg-[rgb(36,36,36)]'>
+      {/* <section id="skills" className='snap-start'>
         <Skills/>
-      </section>
-      <section id="projects" className='snap-start bg-[rgb(36,36,36)]'>
+      </section> */}
+    <section id="projects" className='snap-start '>
         <Projects/>
       </section>
-      <section id="contact" className='snap-start bg-[rgb(36,36,36)]'>
+      <section id="contact" className='snap-start '>
         <Contact/>
       </section>
       <Link href="#hero">
@@ -76,7 +76,7 @@ const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
           </div>
       </footer>
       </Link>
-?
+
      
     </div>
   );

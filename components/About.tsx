@@ -10,13 +10,11 @@ type Props = {}
 export default function About({}: Props) {
   return (
     <motion.div
-    initial={{
-        opacity:0,
-       }}
-       whileInView={{ opacity:1, x:0}}
-       transition={{duration:1.2,}}
-    className='min-h-screen flex flex-col relative text-center-left md:text-left md:flex-row
-    px-10 justify-evenly mt-[-100px] w-auto bg-[rgba(36,36,36)] mx-auto items-center
+       initial={{opacity:0,}}
+       whileInView={{ opacity:1 }}
+       transition={{duration:1.5}}
+    className='h-screen flex flex-col relative text-center-left md:text-left md:flex-row
+    px-10 justify-evenly max-w-7xl w-auto  mx-auto items-center
     '>
         <h3 className='absolute top-24 uppercase tracking-[20px]'>About</h3>
         
@@ -40,7 +38,7 @@ export default function About({}: Props) {
        <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>Here is a <span>little background</span></h4>
        </div>
-       <p className='text-sm'>
+       <p className='text-base'>
         I'm Akhilesh S Pujar I'm from kalaburgi,karnataka currently pursuing my degree in IIIT Pune as Electronics and Communication Engineer I'm in final year of my college .I've been coding for over 1 year now.As a Frontend developer i got internship opportunity
            in Simmi Foundation and i got nice work culture over there and learned man things from this internship 
          .Also I have done 250+ questions

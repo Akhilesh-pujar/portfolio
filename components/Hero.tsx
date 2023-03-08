@@ -14,19 +14,19 @@ export default function Hero({}: Props) {
         words:[
             "Hi I'm Akhilesh S Pujar",
             "Guy who-Loves-coffe.tsx",
-            "<ButLovesToDevelopWebsites/>"
+            "<ButLovesToCode/>",
         ],
         loop:true,
         delaySpeed:2000,
     });
   return (
     <div className='flex flex-col h-screen items-center justify-center
-    text-center  '>
+    text-center  overflow-hidden'>
        <BackgroundCircle/>
        <Image
        priority
        src={hero_banner}
-       className='relative rounded-full h-36 w-36 mx-auto object-cover '
+       className='relative rounded-full h-32 w-32 mx-auto object-cover '
         
        alt="banner"/>
         
