@@ -1,20 +1,15 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 
-type Props = {
-  directionLeft ?: boolean;
-};
+type Props = {};
 
-function Skill2({directionLeft}: Props) {
+function Skill2({}: Props) {
   return (
   <div className='group relative flex cursor-pointer'>
 <motion.img
-initial={{
-  x: directionLeft ? -200 :200,
-  opacity:0,
-}}
-transition={{duration:1}}
-whileInView={{opacity:1, x:0}}
+  initial={{ opacity:0, y:-200}}
+  transition={{duration:1}}
+  whileInView={{opacity:1, y:0}}
  className="  rounded-full border border-gray-500 object-cover w-24 h-24 
  xl:w-22 xl:h-22 filter group-hover:grayscale transition-300 ease-in-out"
 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6bbj0wSjIAxFEEL7_S9IMdDYVJkskFjljJqXHCUETfIb2_Di-qoihp8JD8DtIp5fUMk&usqp=CAU'
