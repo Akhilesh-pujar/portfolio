@@ -26,7 +26,7 @@ function Contact({}: Props) {
     mx-auto items-center z-0'
     >
      <h3 className='absolute  uppercase
-    tracking-[20px] text-2xl top-20'>
+    tracking-[20px] text-2xl top-20 text-gray-500'>
         Contact
      </h3>
      <div className='flex flex-col space-y-0 mt-[50px]'>
@@ -38,17 +38,17 @@ function Contact({}: Props) {
         </h4>
         <div className='space-y-7'>
             <div className='flex items-center space-x-4  justify-center'>
-            <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+            <PhoneIcon className='text-[#597ae8] h-7 w-7 animate-pulse'/>
             <p className='text-2xl'>+91 9110852088</p>
             </div>
 
             <div className='flex items-center space-x-4 justify-center'>
-            <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+            <EnvelopeIcon className='text-[#f6644a] h-7 w-7 animate-pulse'/>
             <p className='text-2xl'>akhileshpujar796@gmail.com</p>
             </div>
 
             <div className='flex items-center space-x-4 justify-center'>
-            <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+            <MapPinIcon className='text-[#24a62c] h-7 w-7 animate-pulse'/>
             <p className='text-2xl'>Pune,India</p>
             </div>
 
@@ -57,7 +57,7 @@ function Contact({}: Props) {
         
         <form 
         onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-col space-y-2 w-fit mx-auto'>
+        className='flex flex-col space-y-4 w-fit mx-auto space-x-0'>
 
             <div className='flex space-x-2'>
                 <input {...register('name')} className='contactInput' type="text" placeholder='Enter Your Name'/>
@@ -67,7 +67,7 @@ function Contact({}: Props) {
 
             <textarea {...register('message')} className='contactInput' placeholder='Message' />
 
-            <button className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black
+            <button className='bg-[#F7AB0A] py-3 px-5 rounded-md text-black
             text-lg font-bold
             ' type='submit'> Submit</button>
                  

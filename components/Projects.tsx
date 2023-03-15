@@ -16,13 +16,13 @@ const Projects = (props: Props) => {
     '>
 
     <h3 className='absolute  uppercase
-    tracking-[20px] text-2xl top-20
+    tracking-[20px] text-2xl top-20 text-gray-500
     '>
         Projects</h3>
 
         <div className='relative w-full flex overflow-x-scroll 
          overflow-y-hidden snap-x  snap-mandatory z-10
-         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]
+         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#b35a40]
          ' >
             {/* projects */}
             {project1.map((project,i )=>(
