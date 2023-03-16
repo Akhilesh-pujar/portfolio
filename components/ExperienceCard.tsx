@@ -13,15 +13,16 @@ export default function ExperienceCard({}: Props) {
    mt-[190px]
   flex-shrink-0 
   w-[500px] 
-  md:w-[500px] xl:w-[600px]  
+  md:w-[600px] xl:w-[800px]  
   snap-center bg-[#292929] p-10
   hover:opacity-100 
   opacity-40 cursor-pointer 
   transition-opacity duration-200 '>
   <motion.img 
   initial={{
+    y:-100,
     opacity:0,
-    y:-100
+    
   }}
   transition={{duration:1.2}}
   whileInView={{opacity:1 , y:0}}
@@ -53,13 +54,13 @@ export default function ExperienceCard({}: Props) {
         />
         {/* tech used */}
     </div>
-    <p className='uppercase py-5 text-gray-300'>Started Work 2023-01 Ended 2023-06</p>
-    <ul className='list-disc space-y-4 ml-5 text-lg'>
-        <li> This internship has helped me develop my Skills on React.js and communication abilities</li>
+    <p className='uppercase py-5 text-gray-300'>01-2023 - present</p>
+    <ul className='list-disc space-y-2 ml-5 text-lg'>
+    
         <li>Added a feature like posting a blog </li>
         <li>Styled the front end using scss</li>
          <li> Learned a lot about Material ui, Chakra ui.</li>
-        <li>optimized the frontend part</li>
+        <li>This internship has helped me develop my Skills on React.js and <br/>communication abilities</li>
     </ul>
   </div>
   </article>
