@@ -36,9 +36,9 @@ function Contact({}: Props) {
                 Let's Talk
             </span>
         </h4>
-        <div className='space-y-7'>
+        <div className='space-y-7 '>
             <div className='flex items-center space-x-4  justify-center'>
-            <PhoneIcon className='text-[#597ae8] h-7 w-7 animate-pulse'/>
+            <PhoneIcon className='text-[#597ae8] h-7 w-7 animate-pulse '/>
             <p className='text-2xl'>+91 9110852088</p>
             </div>
 
@@ -57,18 +57,18 @@ function Contact({}: Props) {
         
         <form 
         onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-col space-y-4 w-full  mx-auto space-x-1'>
+        className='flex flex-col space-y-4 w-fit  space-x-1 shadow-md my-4 shadow-red-500 p-3 '>
 
-            <div className='flex space-x-2'>
-                <input {...register('name')} className='contactInput' type="text" placeholder='Enter Your Name'/>
-                <input {...register('email')} className='contactInput'type="email" placeholder='Mail'/>
+            <div className='flex space-x-2 '>
+                <input {...register('name')} className='contactInput hover:text-white' type="text" placeholder='Enter Your Name'/>
+                <input {...register('email')} className='contactInput hover:text-blue-400'type="email" placeholder='Mail'/>
             </div>
-            <input {...register('subject')} className='contactInput'type="text" placeholder='Subject'/>
+            <input {...register('subject')} className='contactInput hover:text-green-500'type="text" placeholder='Subject'/>
 
-            <textarea {...register('message')} className='contactInput' placeholder='Message' />
+            <textarea {...register('message')} className='contactInput hover:text-yellow-500' placeholder='Message' />
 
             <button className='bg-[#F7AB0A] py-3 px-5 rounded-md text-black
-            text-lg font-bold
+            text-lg font-serif
             ' type='submit'> Submit</button>
                  
         </form>

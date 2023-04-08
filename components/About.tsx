@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion';
-import Image from 'next/image';
+
 
 
 
@@ -30,13 +30,13 @@ export default function About({}: Props) {
         whileInView={{ opacity:1, x:0}}
         viewport={{once:true}}
         
-       src="https://scontent.fblr4-4.fna.fbcdn.net/v/t39.30808-6/293319678_1770997416582603_6350480388994977954_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=GmgFUDHmY30AX-k4XrN&_nc_ht=scontent.fblr4-4.fna&oh=00_AfC3FcH1rNIczimmRC_Hyar96UxMBmDJ5oWBTkc1RjHv7g&oe=64174590"
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-        md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px]'   
+       src="/banner.jpg"
+        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover 
+        md:rounded-lg md:w-50 md:h-50 xl:w-[500px] xl:h-[600px] shadow-md shadow-blue-500 '   
        />
       
-       <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-4xl font-semibold'>Here is a <span className='underline decoration-[#F7AB0A]/50'>little background</span></h4>
+       <div className='space-y-10 px-0 md:px-10 xl:text-center'>
+        <h4 className='text-4xl font-semibold  cursor-pointer shadow-md shadow-red-500'>Biography </h4>
        </div>
        <p className='text-base'>
         I'm Akhilesh S Pujar I'm from kalaburgi,karnataka currently pursuing my degree in IIIT Pune as Electronics and Communication
