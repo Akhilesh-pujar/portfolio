@@ -11,39 +11,41 @@ import About from '../components/About';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import WorkExperience from '@/components/WorkExperience';
-
+import { Props } from 'next/script';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
-import { Project } from '@/typing';
-import { PageInfo } from '@/typing';
-import { Experience } from '@/typing';
-import { Social } from '@/typing';
-import { Skill } from '@/typing';
-import { fetchPageInfo } from '../utils/fetchPageInfo';
-import { fetchSkills } from '@/utils/fetchSkills';
-import { fetchProjects } from '@/utils/fetchProjects';
-import { fetchSocials } from '@/utils/fetchSocials';
-import { fetchExperiences } from '@/utils/fetchExperiences';
 
 
-type Props={
-  pageInfo:PageInfo;
-  experiences:Experience[];
-  projects:Project[]
-  skills:Skill[];
-  socials:Social[];
+// import { Project } from '@/typing';
+// import { PageInfo } from '@/typing';
+// import { Experience } from '@/typing';
+// import { Social } from '@/typing';
+// import { Skill } from '@/typing';
+// import { fetchPageInfo } from '../utils/fetchPageInfo';
+// import { fetchSkills } from '@/utils/fetchSkills';
+// import { fetchProjects } from '@/utils/fetchProjects';
+// import { fetchSocials } from '@/utils/fetchSocials';
+// import { fetchExperiences } from '@/utils/fetchExperiences';
 
-}
 
-const Home = ({ pageInfo, experiences, projects,skills ,socials}:Props)=> {
+// type Props={
+//   pageInfo:PageInfo;
+//   experiences:Experience[];
+//   projects:Project[]
+//   skills:Skill[];
+//   socials:Social[];
+
+// }
+
+const Home = (props:Props)=> {
   return (
     <div className='bg-[rgb(36,36,36)] text-white max-h-full  '>
       <Head>
         <title>Akhil's Portfolio</title>
       </Head>
      
-      <Header social={socials}/>
+      <Header social={[]} />
    
       {/*Banner*/}
       <section id="hero" className='snap-center  '>
