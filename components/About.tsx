@@ -2,7 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 
-import aboutfinal from 'assets/aboutfinal.jpg'
+import herobanner from 'assets/hero_banner.jpeg'
 
 
 
@@ -20,7 +20,7 @@ export default function About({}: Props) {
         <h3 className='absolute uppercase tracking-[20px] text-2xl text-gray-500 sm: top-16'>About</h3>
         
        <Image
-       src={aboutfinal}
+       src={herobanner}
         className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover 
         md:rounded-lg md:w-50 md:h-50 xl:w-[500px] xl:h-[600px] shadow-md shadow-blue-500 '   
        alt='about pic'/>
