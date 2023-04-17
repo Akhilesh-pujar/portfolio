@@ -10,11 +10,12 @@ export default function ExperienceCard({}: Props) {
   return (
   <article className='flex flex-col 
   rounded-lg items-center space-y-2
-   mt-[190px]
+   mt-[200px] 
+   xl:mt-[250px]
   flex-shrink-0 
-  w-[500px] 
-  md:w-[600px] xl:w-[800px]  
-  snap-center bg-[#292929] p-10
+  w-[400px] 
+  md:w-[700px] md:h-[810px] xl:w-[700px] xl:h-[900px] 
+  snap-center bg-[#292929] p-5
   hover:opacity-100 
   opacity-40 cursor-pointer 
   transition-opacity duration-200 '>
@@ -28,7 +29,7 @@ export default function ExperienceCard({}: Props) {
   whileInView={{opacity:1 , y:0}}
   viewport={{once:true}}
   src='https://simmifoundation.org/home/images/logo.png'
-  className='w-32 h-32 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px]
+  className='w-32 h-32 rounded-full md:rounded-full xl:w-[120px] xl:h-[120px]
    object-cover object-center
   '
   />
@@ -54,13 +55,14 @@ export default function ExperienceCard({}: Props) {
         />
         {/* tech used */}
     </div>
-    <p className='uppercase py-5 text-gray-300'>01-2023 - present</p>
-    <ul className='list-disc space-y-2 ml-5 text-lg'>
-    
-        <li>Added a feature like posting a blog </li>
-        <li>Styled the front end using scss</li>
-         <li> Learned a lot about Material ui, Chakra ui.</li>
-        <li>This internship has helped me develop my Skills on React.js and <br/>communication abilities</li>
+    <p className='uppercase py-0 mt-0 text-gray-300'>01-2023 - present</p>
+    <ul className='list-disc space-y-2 ml-5 text-lgv p-10 -mt-10 text-center font-light'>
+  
+        <li>Worked on various projects during the internship, ranging from small-scale websites to large-scale web applications, and gained extensive experience in front-end development technologies such as  React,Next js and for backend mongoose, Rest Api. </li>
+        <li>Proactively identified and resolved technical issues, including debugging and troubleshooting, to ensure smooth functioning of web applications.</li>
+         <li> Developed a deep understanding of user experience and user interface design, and implemented design elements that improved the overall usability and functionality of the web applications.</li>
+        <li>Collaborated with a team of experienced developers and designers to ensure high-quality delivery of projects within the given timelines.</li>
+        <li>Demonstrated excellent communication and interpersonal skills while working with cross-functional teams, and consistently met  project expectations.</li>
     </ul>
   </div>
   </article>

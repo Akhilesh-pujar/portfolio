@@ -1,5 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import {AiOutlineArrowRight} from "react-icons/ai"
+import more_project from "../assets/more_project.png"
+import Image from 'next/image';
 
 type Props = {}
 
@@ -9,6 +12,7 @@ const Projects = (props: Props) => {
     const project3 =[3];
     const project4 =[4];
     const project5 =[5];
+    const project6 =[6];
 
   return (
     <div className='h-screen relative flex overflow-hidden
@@ -195,6 +199,21 @@ const Projects = (props: Props) => {
                 </motion.div>
             ))}
 
+
+{project6.map((project,i)=>(
+                <motion.div 
+                key={project} 
+                initial={{opacity:0}}
+                whileInView={{opacity:1}}
+                transition={{duration:1.5}}
+                className='w-screen flex-shrink-0 snap-center flex flex-col 
+                 space-y-5 items-center justify-center p-20 md:p-44 h-screen
+                '>
+                   <Image src={more_project} alt='more' className=' mt-12 w-[200px] h-[200px] shadow-md shadow-red-500' />
+                     <a href='https://github.com/Akhilesh-pujar' className='font-semibold text-center text-2xl' >Many more <AiOutlineArrowRight className='inline-flex '/></a>
+       
+                </motion.div>
+            ))}
 
 
 

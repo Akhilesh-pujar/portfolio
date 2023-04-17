@@ -22,24 +22,24 @@ function Contact({}: Props) {
   return (
     <div
     className='h-screen relative flex overflow-hidden
-    flex-col md:text-left md:flex-row w-full justify-evenly 
-    mx-auto items-center z-0'
+    flex-col md:text-left md:flex-row w-full justify-center 
+    mx-auto items-center z-0 '
     >
      <h3 className='absolute  uppercase
-    tracking-[20px] text-2xl top-20 text-gray-500'>
+    tracking-[20px] text-2xl top-20 text-gray-500 text-center'>
         Contact
      </h3>
-     <div className='flex flex-col space-y-0 mt-[50px]'>
+     <div className='flex flex-col mt-[80px]'>
         <h4 className='text-4xl font-semibold text-center'> 
         {" "}
-            <span className='decoration-[#F7AB0A]/50 underline'>
+            <span className='decoration-[#F7AB0A]/50 underline text-center font-light text-teal-400'>
                 Let's Talk
             </span>
         </h4>
         <div className='space-y-7 '>
             <div className='flex items-center space-x-4  justify-center'>
-            <PhoneIcon className='text-[#597ae8] h-7 w-7 animate-pulse '/>
-            <p className='text-2xl'>+91 9110852088</p>
+            <PhoneIcon className='text-[#597ae8] h-7 w-7 animate-pulse mt-4'/>
+            <p className='text-2xl mt-4'>+91 9110852088</p>
             </div>
 
             <div className='flex items-center space-x-4 justify-center'>
@@ -57,7 +57,7 @@ function Contact({}: Props) {
         
         <form 
         onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-col space-y-4 w-fit  space-x-1 shadow-md my-4 shadow-red-500 p-3 '>
+        className='flex flex-col space-y-4 w-full  space-x-1 shadow-md  shadow-red-500 p-3  justify-center '>
 
             <div className='flex space-x-2 '>
                 <input {...register('name')} className='contactInput hover:text-white' type="text" placeholder='Enter Your Name'/>
