@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import type { GetStaticProps} from 'next';
+import type { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import hero_banner from '../assets/hero_banner.jpeg';
@@ -15,6 +15,7 @@ import { Props } from 'next/script';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
+import Achievements from '@/components/Achievements';
 
 
 // import { Project } from '@/typing';
@@ -38,48 +39,51 @@ import Contact from '@/components/Contact';
 
 // }
 
-const Home = (props:Props)=> {
+const Home = (props: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white max-h-full  '>
       <Head>
         <title>Akhil's Portfolio</title>
       </Head>
-     
+
       <Header social={[]} />
-   
+
       {/*Banner*/}
       <section id="hero" className='snap-center  '>
-        <Hero/>
+        <Hero />
       </section>
- 
+
       {/* about */}
-       <section id="about" className='snap-center'>
-        <About/>
+      <section id="about" className='snap-center'>
+        <About />
       </section>
-       <section id="experience" className='snap-bottom'>
-        <WorkExperience/>
+      <section id="experience" className='snap-bottom'>
+        <WorkExperience />
+      </section>
+      <section id="achievements" className='snap-bottom'>
+        <Achievements />
       </section>
       <section id="skills" className='snap-start'>
-        <Skills/>
+        <Skills />
       </section>
-       <section id="projects" className='snap-start '>
-        <Projects/>
+      <section id="projects" className='snap-start '>
+        <Projects />
       </section>
       <section id="contact" className='snap-start '>
-        <Contact/>
+        <Contact />
       </section>
       <Link href="#hero">
-      <footer className='sticky bottom-5 w-full cursor-pointer'>
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
             <Image src={hero_banner}
-            alt="footer"
-            className=' object-cover h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
+              alt="footer"
+              className=' object-cover h-10 w-10 rounded-full filter grayscale hover:grayscale-0'
             />
           </div>
-      </footer>
+        </footer>
       </Link>
 
-     
+
     </div>
   );
 };
