@@ -29,7 +29,7 @@ export default function About({ }: Props) {
         <h4 className='text-4xl font-semibold  cursor-pointer shadow-md shadow-red-400'>Biography </h4>
       </div>
       <p className='text-base'>
-        Hello, my name is Akhilesh S Pujar, and I am a software developer with over 1 years of experience in developing complex web applications. I am skilled in a variety of programming languages, including JavaScript, C++, and
+        Hello, my name is Akhilesh S Pujar, and I am a Full developer with over 1 years of experience in developing complex web applications. I am skilled in a variety of programming languages, including JavaScript, C++, and
         have experience working with various web frameworks and databases. Throughout my College, I have successfully delivered several projects on time and within budget, and have received recognition from my Teachers and faculty for my attention
         to detail and problem-solving skills.
         I am passionate about creating innovative and efficient solutions to complex problems, and am always eager to learn and grow in my field .

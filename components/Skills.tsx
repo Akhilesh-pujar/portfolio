@@ -11,6 +11,7 @@ import Skill7 from './Skill7';
 import Skill8 from './Skill8';
 import Skill9 from './Skill9';
 import Skill10 from './Skill10';
+import Skill11 from './Skill11';
 
 type Props = {}
 
@@ -41,6 +42,7 @@ const Skills = (props: Props) => {
       <Skill8/>
       <Skill9/>
       <Skill10/>
+      <Skill11/>
 
 
 
