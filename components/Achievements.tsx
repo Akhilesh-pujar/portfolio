@@ -19,27 +19,31 @@ function Achievements() {
     },
   ];
   return (
-    <section className="bg-[rgb(36,36,36)] py-16">
+    <motion.div 
+  
+    initial={{ opacity: 0 ,y:-200}}
+          
+              whileInView={{ opacity: 1 , y:0 }}
+              transition={{ duration: 1.8, delay: 0.4, ease: 'easeOut' }}
+    className="bg-[rgb(36,36,36)] py-16 ">
       <div className="container mx-auto px-4">
-        <h2 className="  flex justify-center uppercase tracking-[20px]  text-2xl  text-gray-500 mb-8">Achievements</h2>
+        <h2 className=" flex justify-center uppercase tracking-[20px]  text-2xl  text-gray-500 mb-8">Achievements</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {achievements.map((achievement, index) => (
-            <motion.div
+            <div
               key={index}
-              className="bg-[rgb(36,36,36)] rounded-lg  shadow-red-400 shadow p-6 text-gray-500"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: index * 0.4, ease: 'easeOut' }}
+              className="bg-[rgb(36,36,36)] rounded-lg  shadow-red-400 hover:shadow-blue-300 shadow p-6 text-gray-500"
+             
             >
               <h3 className="text-xl font-semibold ">{achievement.title}</h3>
 
 
               <p className=" mt-2">{achievement.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.div>
   )
 }
 

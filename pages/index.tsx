@@ -1,10 +1,8 @@
 import Head from 'next/head';
-import type { GetStaticProps } from 'next';
+// import type { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import hero_banner from '../assets/hero_banner.jpeg';
-
-
 
 
 import About from '../components/About';
@@ -60,7 +58,7 @@ const Home = (props: Props) => {
       <section id="experience" className='snap-bottom'>
         <WorkExperience />
       </section>
-      <section id="achievements" className='snap-bottom'>
+      <section id="achivement" className='snap-bottom'>
         <Achievements />
       </section>
       <section id="skills" className='snap-start'>
@@ -72,6 +70,7 @@ const Home = (props: Props) => {
       <section id="contact" className='snap-start '>
         <Contact />
       </section>
+      
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>

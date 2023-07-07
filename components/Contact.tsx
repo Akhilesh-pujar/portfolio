@@ -56,15 +56,36 @@ function Contact({ }: Props) {
 
                 <form
                     onSubmit={handleSubmit(onSubmit)}
-                    className='flex flex-col space-y-4 w-full  space-x-1 shadow-md  shadow-red-400 p-3  justify-center '>
+                    className='flex flex-col space-y-4  w-full shadow-md hover:shadow-blue-400 shadow-red-400 p-7 justify-center '>
 
-                    <div className='flex space-x-2 '>
-                        <input {...register('name')} className='contactInput hover:text-white' type="text" placeholder='Enter Your Name' />
-                        <input {...register('email')} className='contactInput hover:text-blue-400' type="email" placeholder='Mail' />
+                    <div className='flex space-x-6  rounded-lg sm:w-full '>
+                        <input {...register('name')} className='w-full  bg-opacity-50   focus:border-indigo-500  h-18 text-base 
+                     py-1 px-3 resize-none leading-6  duration-200 ease-in-out hover:text-yellow-500
+                     
+                      outline-none bg-slate-400/10 rounded-sm border-b
+                       border-[#242424] text-gray-500 transition-all placeholder-gray-400
+                      focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40   text-left' type="text" placeholder='Enter Your Name' />
+                        <input {...register('email')} className='w-full  bg-opacity-50   focus:border-indigo-500  h-15 text-base 
+                     py-1 px-3 resize-none leading-6  duration-200 ease-in-out hover:text-yellow-500
+                     
+                      outline-none bg-slate-400/10 rounded-sm border-b
+                       border-[#242424] text-gray-500 transition-all placeholder-gray-400
+                      focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40   text-left' type="email" placeholder='Mail' />
                     </div>
-                    <input {...register('subject')} className='contactInput hover:text-green-500' type="text" placeholder='Subject' />
+                    <input {...register('subject')} className='w-full  bg-opacity-50   focus:border-indigo-500  h-10 text-base 
+                     py-1 px-3 resize-none leading-6  duration-200 ease-in-out hover:text-yellow-500
+                     
+                      outline-none bg-slate-400/10 rounded-sm border-b
+                       border-[#242424] text-gray-500 transition-all placeholder-gray-400
+                      focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40   text-left' type="text" placeholder='Subject' />
 
-                    <textarea {...register('message')} className='contactInput hover:text-yellow-500' placeholder='Message' />
+                    <textarea {...register('message')} className='w-full  bg-opacity-50   focus:border-indigo-500  h-32 text-base 
+                     py-1 px-3 resize-none leading-6  duration-200 ease-in-out hover:text-yellow-500
+                     
+                     outline-none bg-slate-400/10 rounded-sm border-b
+  border-[#242424] text-gray-500 transition-all placeholder-gray-400
+  focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40   text-left
+                     ' placeholder='Message' />
 
                     <button className='bg-[#F7AB0A] py-3 px-5 rounded-md text-black
             text-lg font-serif
