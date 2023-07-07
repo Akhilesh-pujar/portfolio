@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-import aboutfinal from 'assets/aboutfinal.jpg'
+import aboutfinal from 'assets/aboutfinal.jpeg'
 
 
 
