@@ -14,8 +14,8 @@ function Achievements() {
 
     },
     {
-      title: 'Leadership Award',
-      description: 'Received the Leadership Award for successfully leading a cross-functional team on a complex project while I was in  unschool internship.',
+      title: 'Ranked under 250 in coding ninja contest',
+      description: 'I have participated in Striver SDE challenge contest in which i have secured rank of 240 out of 5000 ,during this challenge I have learned a lot like managing time and solving questions with optimized code and thanks to coding ninja cummunity for recognizing me and got prizes from them.',
     },
   ];
   return (
