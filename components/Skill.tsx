@@ -8,7 +8,7 @@ function Skill({}: Props) {
   return (
   <div className='group relative flex cursor-pointer'>
   <motion.img
-  initial={{ opacity:0, x:-200}}
+  initial={{ opacity:0, y:-200}}
 transition={{duration:1}}
 whileInView={{opacity:1, y:0}}
  className="rounded-full border border-gray-500 object-cover
